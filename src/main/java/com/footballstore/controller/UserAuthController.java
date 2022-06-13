@@ -35,6 +35,10 @@ import com.footballstore.modelo.SignupRequest;
 import com.footballstore.modelo.User;
 import com.footballstore.servicios.UserService;
 
+/**
+ * @author avallina
+ * Controlador de auth
+ */
 @RestController
 @RequestMapping("/api/auth")
 @CrossOrigin

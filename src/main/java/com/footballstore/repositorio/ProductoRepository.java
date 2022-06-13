@@ -10,7 +10,7 @@ import com.footballstore.modelo.ProductoVO;
 @Repository
 public interface ProductoRepository extends JpaRepository<ProductoVO, Integer>{
 	
-	List<ProductoVO> findAll();
+	List<ProductoVO> findAllByOrderByIdDesc();
 	List<ProductoVO> findByNombreContainingOrDescripcionContaining(String nombre,String descripcion);
 	List<ProductoVO> findByTipo_Id(int tipo);
 	ProductoVO findById(int id);

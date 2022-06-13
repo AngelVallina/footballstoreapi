@@ -30,7 +30,7 @@ public class ProductosServiceImpl implements ProductosService {
 	public List<ProductoImagenesDTO> findAll() {
 		try {
 			List<ProductoImagenesDTO> listaRetorno = new ArrayList<>();
-			List<ProductoVO> listaProductos = productosRepository.findAll();
+			List<ProductoVO> listaProductos = productosRepository.findAllByOrderByIdDesc();
 			
 			for (ProductoVO producto : listaProductos) {
 				
